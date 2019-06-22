@@ -1,39 +1,10 @@
-# Project Name
+# Related-Items
 
-> Project description
+This is a replication of the related-items carousel from <a href="https://www.fashionnova.com/">FashionNova</a>.  It's a microservice for a team project to replicate their item page.  Microservices communicate state through custom events / event listeners added in the proxy.
 
-## Related Projects
-
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-
-## Table of Contents
-
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
-
-## Usage
-
-> Some usage instructions
-
-## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
-
-## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install -g webpack
-npm install
-```
-
+## Other Microservices
+  - https://github.com/fasho-va/Product-Display-Proxy
+  - https://github.com/fasho-va/reviews
+  - https://github.com/fasho-va/header
+  - https://github.com/fasho-va/Product-Display
+  - https://github.com/fasho-va/Add-To-Bag

@@ -33,9 +33,9 @@ class RelatedItems extends React.Component {
     }
 
     fetchItems() {
-        const relatedItems = axios.get(`http://fashovarelateditems-env.p3zuanqtmi.us-east-2.elasticbeanstalk.com/items/category/${this.state.currentCat}`);
-        const mensItems = axios.get('http://fashovarelateditems-env.p3zuanqtmi.us-east-2.elasticbeanstalk.com/items/category/mens');
-        const randomItems = axios.get('http://fashovarelateditems-env.p3zuanqtmi.us-east-2.elasticbeanstalk.com/items/random');
+        const relatedItems = axios.get(`./items/category/${this.state.currentCat}`);
+        const mensItems = axios.get('./items/category/mens');
+        const randomItems = axios.get('./items/random');
 
         Promise.all([relatedItems, mensItems, randomItems])
             .then((cats) => {

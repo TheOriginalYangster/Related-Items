@@ -33,9 +33,9 @@ class RelatedItems extends React.Component {
     }
 
     fetchItems() {
-        const relatedItems = axios.get(`https://related-items.herokuapp.com//items/category/${this.state.currentCat}`);
-        const mensItems = axios.get('https://related-items.herokuapp.com//items/category/mens');
-        const randomItems = axios.get('https://related-items.herokuapp.com//items/random');
+        const relatedItems = axios.get(`https://related-items.herokuapp.com/items/category/${this.state.currentCat}`);
+        const mensItems = axios.get('https://related-items.herokuapp.com/items/category/mens');
+        const randomItems = axios.get('https://related-items.herokuapp.com/items/random');
 
         Promise.all([relatedItems, mensItems, randomItems])
             .then((cats) => {
